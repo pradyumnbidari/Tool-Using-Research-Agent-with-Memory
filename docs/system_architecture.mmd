@@ -1,0 +1,14 @@
+flowchart TD
+    Q[User question] --> M[Select session memory]
+    M --> T[LangGraph Reasoning Node]
+    T -->|Action selected| X{Tool Router}
+    X --> W[Wikipedia search]
+    X --> C[Calculator]
+    X --> P[Restricted Python execution]
+    W --> O[Observation + trace logger]
+    C --> O
+    P --> O
+    O --> T
+    T -->|Final answer| A[Answer + memory update]
+    A --> S[Persist memory JSON]
+
