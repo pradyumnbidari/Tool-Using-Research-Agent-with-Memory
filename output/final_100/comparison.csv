@@ -1,0 +1,3 @@
+method,completed,exact_match_accuracy_pct,token_f1_pct,mean_tool_calls_per_query,mean_total_tokens_per_query,total_input_tokens,total_output_tokens,total_tokens
+react,100,7.0,7.82,3.91,7371.6,698080,39084,737164
+cot,100,15.0,20.94,0.0,166.7,9933,6733,16666

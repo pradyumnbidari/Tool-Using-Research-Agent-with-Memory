@@ -1,0 +1,219 @@
+{
+  "note": "Small illustrative 4-turn comparison; NOT HotpotQA accuracy.",
+  "methods": {
+    "buffer": {
+      "graded_followups": 2,
+      "correct_followups": 2,
+      "followup_accuracy_pct": 100.0,
+      "total_agent_tokens": 11147,
+      "total_memory_update_tokens": 0,
+      "combined_tokens": 11147,
+      "sum_memory_context_chars": 521,
+      "final_memory_state": {
+        "turns": [
+          {
+            "question": "Please remember: my project code name is Orion.",
+            "answer": "my project code name is Orion"
+          },
+          {
+            "question": "Remember: the Orion project budget is 4500 rupees.",
+            "answer": "4500 rupees"
+          },
+          {
+            "question": "What is my project code name? Reply with the name only.",
+            "answer": "Orion"
+          },
+          {
+            "question": "What is the budget for that project? Reply with the number only.",
+            "answer": "4500"
+          }
+        ]
+      }
+    },
+    "summary": {
+      "graded_followups": 2,
+      "correct_followups": 2,
+      "followup_accuracy_pct": 100.0,
+      "total_agent_tokens": 10439,
+      "total_memory_update_tokens": 480,
+      "combined_tokens": 10919,
+      "sum_memory_context_chars": 281,
+      "final_memory_state": {
+        "summary": "Orion confirmed the Orion project budget is 4500 rupees."
+      }
+    },
+    "entity": {
+      "graded_followups": 2,
+      "correct_followups": 1,
+      "followup_accuracy_pct": 50.0,
+      "total_agent_tokens": 27414,
+      "total_memory_update_tokens": 609,
+      "combined_tokens": 28023,
+      "sum_memory_context_chars": 193,
+      "final_memory_state": {
+        "entities": {
+          "Orion": "project code name for the user's project",
+          "Orion budget": "4500 rupees"
+        }
+      }
+    }
+  },
+  "per_turn": [
+    {
+      "memory": "buffer",
+      "turn": 1,
+      "question": "Please remember: my project code name is Orion.",
+      "answer": "my project code name is Orion",
+      "expected": null,
+      "hit": null,
+      "memory_context_chars": 0,
+      "agent_tokens": 1165,
+      "memory_update_tokens": 0,
+      "tool_calls": 0,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_buffer\\60ff8311c719.jsonl"
+    },
+    {
+      "memory": "buffer",
+      "turn": 2,
+      "question": "Remember: the Orion project budget is 4500 rupees.",
+      "answer": "4500 rupees",
+      "expected": null,
+      "hit": null,
+      "memory_context_chars": 94,
+      "agent_tokens": 8771,
+      "memory_update_tokens": 0,
+      "tool_calls": 4,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_buffer\\f18d62bef79d.jsonl"
+    },
+    {
+      "memory": "buffer",
+      "turn": 3,
+      "question": "What is my project code name? Reply with the name only.",
+      "answer": "Orion",
+      "expected": "Orion",
+      "hit": true,
+      "memory_context_chars": 174,
+      "agent_tokens": 595,
+      "memory_update_tokens": 0,
+      "tool_calls": 0,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_buffer\\875dd500c068.jsonl"
+    },
+    {
+      "memory": "buffer",
+      "turn": 4,
+      "question": "What is the budget for that project? Reply with the number only.",
+      "answer": "4500",
+      "expected": "4500",
+      "hit": true,
+      "memory_context_chars": 253,
+      "agent_tokens": 616,
+      "memory_update_tokens": 0,
+      "tool_calls": 0,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_buffer\\df6f62fd879b.jsonl"
+    },
+    {
+      "memory": "summary",
+      "turn": 1,
+      "question": "Please remember: my project code name is Orion.",
+      "answer": "I could not verify the answer within the tool-call limit.",
+      "expected": null,
+      "hit": null,
+      "memory_context_chars": 0,
+      "agent_tokens": 8714,
+      "memory_update_tokens": 100,
+      "tool_calls": 6,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_summary\\15964d80f651.jsonl"
+    },
+    {
+      "memory": "summary",
+      "turn": 2,
+      "question": "Remember: the Orion project budget is 4500 rupees.",
+      "answer": "4500",
+      "expected": null,
+      "hit": null,
+      "memory_context_chars": 55,
+      "agent_tokens": 571,
+      "memory_update_tokens": 121,
+      "tool_calls": 0,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_summary\\a8f392e60cf3.jsonl"
+    },
+    {
+      "memory": "summary",
+      "turn": 3,
+      "question": "What is my project code name? Reply with the name only.",
+      "answer": "Orion",
+      "expected": "Orion",
+      "hit": true,
+      "memory_context_chars": 116,
+      "agent_tokens": 575,
+      "memory_update_tokens": 133,
+      "tool_calls": 0,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_summary\\8e22e946f018.jsonl"
+    },
+    {
+      "memory": "summary",
+      "turn": 4,
+      "question": "What is the budget for that project? Reply with the number only.",
+      "answer": "4500",
+      "expected": "4500",
+      "hit": true,
+      "memory_context_chars": 110,
+      "agent_tokens": 579,
+      "memory_update_tokens": 126,
+      "tool_calls": 0,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_summary\\48eea56194f1.jsonl"
+    },
+    {
+      "memory": "entity",
+      "turn": 1,
+      "question": "Please remember: my project code name is Orion.",
+      "answer": "I couldn't find relevant information about project code names on Wikipedia. This question is better suited for a human conversation rather than a tool.",
+      "expected": null,
+      "hit": null,
+      "memory_context_chars": 0,
+      "agent_tokens": 1884,
+      "memory_update_tokens": 145,
+      "tool_calls": 1,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_entity\\b996d647ac4e.jsonl"
+    },
+    {
+      "memory": "entity",
+      "turn": 2,
+      "question": "Remember: the Orion project budget is 4500 rupees.",
+      "answer": "NOT_FOUND",
+      "expected": null,
+      "hit": null,
+      "memory_context_chars": 47,
+      "agent_tokens": 5009,
+      "memory_update_tokens": 151,
+      "tool_calls": 4,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_entity\\1425bd6b7ebe.jsonl"
+    },
+    {
+      "memory": "entity",
+      "turn": 3,
+      "question": "What is my project code name? Reply with the name only.",
+      "answer": "I could not verify the answer within the tool-call limit.",
+      "expected": "Orion",
+      "hit": false,
+      "memory_context_chars": 73,
+      "agent_tokens": 19941,
+      "memory_update_tokens": 159,
+      "tool_calls": 6,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_entity\\a72eba3543c6.jsonl"
+    },
+    {
+      "memory": "entity",
+      "turn": 4,
+      "question": "What is the budget for that project? Reply with the number only.",
+      "answer": "4500",
+      "expected": "4500",
+      "hit": true,
+      "memory_context_chars": 73,
+      "agent_tokens": 580,
+      "memory_update_tokens": 154,
+      "tool_calls": 0,
+      "trace_file": "D:\\5TH SEM\\Prompt\\Research_Agent_STANDALONE_COMPLETE_FREE\\Research_Agent_Standalone\\output\\traces\\comparison_entity\\f64cdef9d956.jsonl"
+    }
+  ]
+}
